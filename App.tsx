@@ -1,8 +1,7 @@
-
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { GameState, type Brick, type Ball, type Paddle, type Emotion } from './types';
-import * as C from './constants';
-import { Overlay } from './components/Overlay';
+import { GameState, type Brick, type Ball, type Paddle, type Emotion } from './types.ts';
+import * as C from './constants.ts';
+import { Overlay } from './components/Overlay.tsx';
 
 // Helper function to draw faces on bricks
 const drawFace = (ctx: CanvasRenderingContext2D, brick: Brick) => {
